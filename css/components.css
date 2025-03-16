@@ -1,0 +1,54 @@
+.ui.text.size-textxs {
+    font-size: 25px;
+    font-weight: 300;
+
+    @media only screen and (max-width: 1440px) {
+        font-size: 21px;
+    }
+
+    @media only screen and (max-width: 1050px) {
+        font-size: 23px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 21px;
+    }
+}
+
+
+.ui.text {
+    color: var(--gray_700);
+    font-family: SF Pro Display;
+}
+
+.ui.heading.size-top_text {
+    font-family: SF Pro Display;
+    font-size: 20px;
+    font-weight: 600;
+
+    @media only screen and (max-width: 1440px) {
+        font-size: 17px;
+    }
+}
+
+.ui.heading.size-headingxs {
+    font-size: 53px;
+    font-weight: 700;
+
+    @media only screen and (max-width: 1440px) {
+        font-size: 45px;
+    }
+
+    @media only screen and (max-width: 1050px) {
+        font-size: 45px;
+    }
+
+    @media only screen and (max-width: 550px) {
+        font-size: 39px;
+    }
+}
+
+.ui.heading {
+    color: var(--gray_900);
+    font-family: SF Pro Display;
+}

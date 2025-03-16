@@ -1,0 +1,31 @@
+:root {
+    /*------Color variables------*/
+    --black_900: #000c15;
+    --cyan_800: #176b87;
+    --cyan_900: #005773;
+    --gray_100: #f5f5f5;
+    --gray_500: #a7a7a7;
+    --gray_700: #616161;
+    --gray_900: #001c30;
+    --white_a700: #ffffff;
+    /*------Border radius variables------*/
+    --radius-xs: 28px;
+    --radius-sm: 38px;
+    /*------Spacing variables------*/
+    --space-xs: 22px;
+}
+
+/*-------------------------------------  2. Utility CSS--------------------------------------*/
+.flex-col-center-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col-end-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
