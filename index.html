@@ -1,408 +1,272 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Parental Email Template - Stay Informed with NextGoat</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#000000" />
-    <style>
-        :root {
-            --white_a700: #ffffff;
-            --gray_100: #f5f5f5;
-            --gray_700: #616161;
-            --gray_900: #001c30;
-            --black_900: #000c15;
-            --cyan_800: #176b87;
-            --cyan_900: #005773;
-            --radius-xs: 28px;
-            --radius-sm: 38px;
-            --space-xs: 22px;
+    
+    <style type="text/css">
+        /* Reset styles */
+        body, table, td, p, a, li, blockquote {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
         }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
+        
+        table, td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
         }
-
+        
+        img {
+            -ms-interpolation-mode: bicubic;
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+        
+        /* Main styles */
         body {
-            font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, sans-serif;
-            line-height: 1.5;
+            margin: 0 !important;
+            padding: 0 !important;
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
         }
-
-        /* Mail Template Styles */
-        .mail-template__privacy-text {
-            text-decoration: underline;
+        
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
         }
-
-        .rowdescription {
-            padding-top: 136px;
-            padding-bottom: 136px;
-            background-color: var(--white_a700);
-            width: 100%;
-        }
-
-        .stack01011900 {
-            height: 1508px;
-            position: relative;
-            align-content: center;
-        }
-
-        .mail-template__content {
-            width: 100%;
-            max-width: 1684px;
-        }
-
-        .mail-template__header {
-            background: linear-gradient(223deg, #176b87, #000c15, #001c30);
-        }
-
-        .mail-template__header-row {
-            height: 754px;
-            background-image: url("data:image/svg+xml,%3Csvg width='1684' height='754' viewBox='0 0 1684 754' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cmask id='mask0_3_325' style='mask-type:alpha' maskUnits='userSpaceOnUse' x='0' y='0' width='1684' height='754'%3E%3Crect width='1684' height='754' fill='url(%23paint0_linear_3_325)'/%3E%3C/mask%3E%3Cg mask='url(%23mask0_3_325)'%3E%3Cg style='mix-blend-mode:color-dodge' opacity='0.22'%3E%3Cmask id='mask1_3_325' style='mask-type:luminance' maskUnits='userSpaceOnUse' x='-625' y='-864' width='2996' height='2542'%3E%3Cpath d='M-625 234.803L61.7521 1677.68L2370.35 578.872L1683.6 -864L-625 234.803Z' fill='white'/%3E%3C/mask%3E%3Cg mask='url(%23mask1_3_325)'%3E%3Cpath d='M-624.998 234.803L61.7535 1677.68L2370.35 578.872L1683.6 -864L-624.998 234.803Z' fill='%23005773'/%3E%3Cpath d='M1505.17 -12.1436L1590.63 77.754L2027.07 450.853L2102.37 473.573L1534.42 -11.9403L1505.17 -12.1436Z' fill='%232BAF81'/%3E%3Cpath d='M1444.11 84.8596L1787.81 378.663L1863.11 401.382L1497.52 88.8701L1444.11 84.8596Z' fill='%232BAF81'/%3E%3Cpath d='M1563.34 -11.743L2132.46 474.772L2086.44 393.767L1612.45 -11.4184L1563.34 -11.743Z' fill='%232BAF81'/%3E%3Cpath d='M1641.37 -11.2207L2059.33 346.074L2013.29 265.076L1690.48 -10.8818L1641.37 -11.2207Z' fill='%232BAF81'/%3E%3Cpath d='M1359.25 78.4932L1668.18 342.566L1743.48 365.286L1412.68 82.4968L1359.25 78.4932Z' fill='%232BAF81'/%3E%3Cpath d='M1528.98 91.2386L1907.44 414.758L1982.74 437.477L1582.39 95.2492L1528.98 91.2386Z' fill='%232BAF81'/%3E%3Cpath d='M1623.84 329.197L1327.81 76.1318L1274.39 72.1281L1548.54 306.478L1623.84 329.197Z' fill='%232BAF81'/%3E%3Cpath d='M1318.31 1.83279L1038.86 -237.037L968.914 -255.192L1259.39 -6.88071L1318.31 1.83279Z' fill='%232BAF81'/%3E%3Cpath d='M1181.27 -18.4402L1224.7 -12.0146L1029.15 -179.165L1181.27 -18.4402Z' fill='%232BAF81'/%3E%3Cpath d='M1416.12 -46.9014L1261.12 -179.391L1191.16 -197.54L1370.57 -44.1761L1416.12 -46.9014Z' fill='%232BAF81'/%3E%3Cpath d='M1411.92 15.6945L1150 -208.225L1080.04 -226.359L1352.99 6.96649L1411.92 15.6945Z' fill='%232BAF81'/%3E%3Cpath d='M892.663 64.5948L819.288 1.86433L800.683 27.6207L830.55 53.1533L892.663 64.5948Z' fill='%232BAF81'/%3E%3Cpath d='M991.341 82.7725L848.837 -39.0465L830.232 -13.2901L929.228 71.3309L991.341 82.7725Z' fill='%232BAF81'/%3E%3Cpath d='M1096.29 147.96L1496.36 489.969L1482.05 436.062L1104.04 112.93L1096.29 147.96Z' fill='%232BAF81'/%3E%3Cpath d='M1090.01 100.936L878.384 -79.9572L859.793 -54.2077L1027.9 89.5087L1090.01 100.936Z' fill='%232BAF81'/%3E%3Cpath d='M1550.3 692.945L1067.11 279.89L1059.36 314.921L1564.63 746.845L1550.3 692.945Z' fill='%232BAF81'/%3E%3Cpath d='M1573.06 778.566L1054.79 335.538L1047.04 370.569L1587.38 832.466L1573.06 778.566Z' fill='%232BAF81'/%3E%3Cpath d='M1083.99 203.616L1519.11 575.589L1504.79 521.703L1091.72 168.592L1083.99 203.616Z' fill='%232BAF81'/%3E%3Cpath d='M1459.29 350.441L907.935 -120.869L889.345 -95.1197L1473.62 404.341L1459.29 350.441Z' fill='%232BAF81'/%3E%3Cpath d='M1071.66 259.264L1541.87 661.21L1527.55 607.324L1079.41 224.234L1071.66 259.264Z' fill='%232BAF81'/%3E%3Cpath d='M1444.96 296.526L1181.43 46.751L937.5 -161.788L918.895 -136.031L1450.87 318.72L1444.96 296.526Z' fill='%232BAF81'/%3E%3Cpath d='M1542.76 818.842L1042.48 391.195L1034.73 426.226L1466.08 794.952L1542.76 818.842Z' fill='%232BAF81'/%3E%3Cpath d='M1177.3 704.973L1005.55 558.141L997.8 593.171L1100.62 681.069L1177.3 704.973Z' fill='%232BAF81'/%3E%3Cpath d='M1420.94 780.887L1030.17 446.836L1022.43 481.867L1344.26 756.998L1420.94 780.887Z' fill='%232BAF81'/%3E%3Cpath d='M986.247 645.426L1055.48 666.998L993.244 613.797L986.247 645.426Z' fill='%232BAF81'/%3E%3Cpath d='M1299.12 742.927L1017.86 502.5L1010.11 537.53L1222.45 719.037L1299.12 742.927Z' fill='%232BAF81'/%3E%3Cpath d='M81.1849 300.436L-255.986 12.1989L-315.799 2.72478L24.1415 293.324L81.1849 300.436Z' fill='%232BAF81'/%3E%3Cpath d='M459.122 160.282L409.265 117.664L349.452 108.19L414.425 163.717L459.122 160.282Z' fill='%232BAF81'/%3E%3Cpath d='M388.104 165.752L314.229 102.604L254.408 93.1158L343.407 169.187L388.104 165.752Z' fill='%232BAF81'/%3E%3Cpath d='M317.085 171.22L219.193 87.5425L159.372 78.054L272.388 174.655L317.085 171.22Z' fill='%232BAF81'/%3E%3Cpath d='M33.0261 193.086L-160.945 27.2747L-220.765 17.786L-11.6851 196.528L33.0261 193.086Z' fill='%232BAF81'/%3E%3Cpath d='M104.03 187.625L-65.9082 42.336L-125.729 32.8474L59.3334 191.06L104.03 187.625Z' fill='%232BAF81'/%3E%3Cpath d='M175.049 182.156L29.1279 57.3978L-30.7003 47.9306L130.352 185.592L175.049 182.156Z' fill='%232BAF81'/%3E%3Cpath d='M246.067 176.688L124.157 72.4807L64.336 62.992L201.37 180.123L246.067 176.688Z' fill='%232BAF81'/%3E%3Cpath d='M530.14 154.814L504.308 132.741L444.488 123.252L485.436 158.27L530.14 154.814Z' fill='%232BAF81'/%3E%3Cpath d='M601.159 149.346L599.345 147.802L539.524 138.314L556.454 152.802L601.159 149.346Z' fill='%232BAF81'/%3E%3Cpath d='M1380.35 1027.62L1091.06 722.517L1031.13 702.162L1398.85 1089.95L1380.35 1027.62Z' fill='%232BAF81'/%3E%3Cpath d='M1510.25 960.405L1376.67 819.525L1316.74 799.17L1469.78 960.556L1510.25 960.405Z' fill='%232BAF81'/%3E%3Cpath d='M1445.93 960.651L1281.47 787.185L1221.54 766.83L1405.45 960.787L1445.93 960.651Z' fill='%232BAF81'/%3E%3Cpath d='M1360.58 960.943L1381.61 960.88L1186.26 754.843L1126.34 734.502L1369.48 990.915L1360.58 960.943Z' fill='%232BAF81'/%3E%3Cpath d='M944.259 740.659L1454.2 1276.63L1439.1 1225.72L987.65 749.614L944.259 740.659Z' fill='%232BAF81'/%3E%3Cpath d='M1409.72 1126.67L1067.92 766.184L1017.4 755.754L1428.23 1189L1409.72 1126.67Z' fill='%232BAF81'/%3E%3Cpath d='M334.416 1130.82L-89.1163 768.782L-154.353 767.287L279.093 1137.81L334.416 1130.82Z' fill='%23004254'/%3E%3Cpath d='M487.35 1111.51L351.977 965.932L368.096 961.092L149.552 774.289L84.3226 772.772L481.439 1112.26L487.35 1111.51Z' fill='%23004254'/%3E%3Cpath d='M266.956 1139.34L-168.669 766.952L-234.356 765.441L211.268 1146.38L266.956 1139.34Z' fill='%23004254'/%3E%3Cpath d='M469.302 1113.79L69.9981 772.458L4.75481 770.948L413.993 1120.77L469.302 1113.79Z' fill='%23004254'/%3E%3Cpath d='M401.856 1122.3L-9.56198 770.613L-74.7984 769.117L346.554 1129.29L401.856 1122.3Z' fill='%23004254'/%3E%3Cpath d='M378.392 957.997L425.369 943.884L229.121 776.113L163.877 774.603L378.392 957.997Z' fill='%23004254'/%3E%3Cpath d='M539.929 909.462L388.229 779.774L322.993 778.278L492.952 923.575L539.929 909.462Z' fill='%23004254'/%3E%3Cpath d='M-248.672 765.105L-313.916 763.595L143.822 1154.89L199.131 1147.91L-248.672 765.105Z' fill='%23004254'/%3E%3Cpath d='M769.056 840.633L706.452 787.11L641.215 785.615L722.079 854.745L769.056 840.633Z' fill='%23004254'/%3E%3Cpath d='M711.777 857.826L626.899 785.28L561.655 783.77L664.807 871.953L711.777 857.826Z' fill='%23004254'/%3E%3Cpath d='M826.343 823.419L786.006 788.941L720.769 787.446L779.366 837.531L826.343 823.419Z' fill='%23004254'/%3E%3Cpath d='M467.79 781.619L402.547 780.109L550.24 906.36L597.217 892.248L467.79 781.619Z' fill='%23004254'/%3E%3Cpath d='M654.49 875.04L547.344 783.449L482.101 781.94L607.513 889.153L654.49 875.04Z' fill='%23004254'/%3E%3Cpath d='M482.656 926.67L308.675 777.943L243.438 776.448L435.679 940.782L482.656 926.67Z' fill='%23004254'/%3E%3Cpath d='M-620.025 116.411L-659.822 136.646L2.52373 702.866L65.4892 702.417L-620.025 116.411Z' fill='%23004254'/%3E%3Cpath d='M93.5337 702.217L-171.294 433.826L-266.923 352.079L-325.74 356.076L79.3007 702.32L93.5337 702.217Z' fill='%23004254'/%3E%3Cpath d='M901.046 703.287L903.468 690.825L393.363 254.761L337.316 261.121L852.694 701.683L901.046 703.287Z' fill='%23004254'/%3E%3Cpath d='M947.593 463.844L666.769 223.789L610.715 230.134L938.542 510.378L947.593 463.844Z' fill='%23004254'/%3E%3Cpath d='M596.677 693.267L273.906 417.36L189.84 399.767L530.639 691.091L596.677 693.267Z' fill='%23004254'/%3E%3Cpath d='M914.491 634.079L461.71 247.025L405.656 253.37L905.461 680.621L914.491 634.079Z' fill='%23004254'/%3E%3Cpath d='M677.186 695.917L376.422 438.807L292.357 421.214L611.163 693.734L677.186 695.917Z' fill='%23004254'/%3E%3Cpath d='M936.556 520.596L598.408 231.532L542.354 237.878L927.519 567.124L936.556 520.596Z' fill='%23004254'/%3E%3Cpath d='M355.124 685.311L-33.626 352.993L-97.9582 339.529L-29.6142 410.689L289.107 683.143L355.124 685.311Z' fill='%23004254'/%3E%3Cpath d='M516.165 690.618L171.394 395.893L87.3286 378.3L450.127 688.442L516.165 690.618Z' fill='%23004254'/%3E%3Cpath d='M991.779 236.532L940.558 192.759L884.504 199.104L982.734 283.081L991.779 236.532Z' fill='%23004254'/%3E%3Cpath d='M925.536 577.341L530.064 239.267L474.017 245.627L916.484 623.876L925.536 577.341Z' fill='%23004254'/%3E%3Cpath d='M757.696 698.567L478.924 460.261L394.859 442.668L691.672 696.385L757.696 698.567Z' fill='%23004254'/%3E%3Cpath d='M958.681 406.783L735.511 215.988L679.063 222.397L949.58 453.624L958.681 406.783Z' fill='%23004254'/%3E%3Cpath d='M980.743 293.285L872.213 200.495L816.166 206.854L971.705 339.812L980.743 293.285Z' fill='%23004254'/%3E%3Cpath d='M435.636 687.96L68.8789 374.445L-15.1721 356.845L369.619 685.791L435.636 687.96Z' fill='%23004254'/%3E%3Cpath d='M969.72 350.031L803.859 208.252L747.805 214.597L960.668 396.565L969.72 350.031Z' fill='%23004254'/%3E%3Cpath d='M230.228 681.205L274.615 682.661L34.3313 477.252L230.228 681.205Z' fill='%23004254'/%3E%3Cpath d='M275.43 269.675L484.954 453.515L772.184 699.033L838.208 701.216L325.002 262.504L307.574 264.481L307.756 264.678L275.43 269.675Z' fill='%23004254'/%3E%3Cpath d='M1892.64 659.478L1637.35 441.248L1776.05 614.078L1841.15 669.722L1892.64 659.478Z' fill='%23004254'/%3E%3Cpath d='M1955.46 646.996L1707.42 434.961L1607.09 403.464L1903.94 657.232L1955.46 646.996Z' fill='%23004254'/%3E%3Cpath d='M1554.46 421.913L1555.39 425.434L1563.39 432.279L1554.46 421.913Z' fill='%23004254'/%3E%3Cpath d='M1602.17 477.34L1559.41 440.793L1577.77 510.753L1778.9 682.679L1602.17 477.34Z' fill='%23004254'/%3E%3Cpath d='M1963.43 852.332L1581.8 526.092L1600.15 596.06L1929.79 877.847L1963.43 852.332Z' fill='%23004254'/%3E%3Cpath d='M1861.85 897.863L1626.55 696.718L1644.91 766.665L1766.67 870.748L1861.85 897.863Z' fill='%23004254'/%3E%3Cpath d='M1892.06 906.455L1922.42 883.443L1604.18 611.412L1622.53 681.359L1882.75 903.808L1892.06 906.455Z' fill='%23004254'/%3E%3Cpath d='M632.072 113.04L211.957 -246.097L171.181 -226.689L552.148 98.9801L632.072 113.04Z' fill='%23004254'/%3E%3Cpath d='M242.219 44.479L13.0581 -151.429L-27.7319 -132.014L162.295 30.4187L242.219 44.479Z' fill='%23004254'/%3E%3Cpath d='M741.24 7.8303L361.138 -317.101L320.363 -297.693L714.048 38.8593L741.24 7.8303Z' fill='%23004254'/%3E%3Cpath d='M437.137 78.7561L112.503 -198.759L71.727 -179.352L357.213 64.6957L437.137 78.7561Z' fill='%23004254'/%3E%3Cpath d='M534.613 95.8943L162.224 -222.425L121.448 -203.018L454.675 81.8408L534.613 95.8943Z' fill='%23004254'/%3E%3Cpath d='M807.545 -67.8486L460.579 -364.432L419.804 -345.024L780.353 -36.8195L807.545 -67.8486Z' fill='%23004254'/%3E%3Cpath d='M708.082 45.6625L311.401 -293.428L270.626 -274.021L680.89 76.6916L708.082 45.6625Z' fill='%23004254'/%3E%3Cpath d='M774.395 -30.0021L410.858 -340.766L370.083 -321.359L747.203 1.02701L774.395 -30.0021Z' fill='%23004254'/%3E%3Cpath d='M674.924 83.4949L261.679 -269.763L220.903 -250.355L647.733 114.524L674.924 83.4949Z' fill='%23004254'/%3E%3Cpath d='M840.688 -105.674L510.317 -388.104L469.527 -368.69L813.511 -74.6523L840.688 -105.674Z' fill='%23004254'/%3E%3Cpath d='M339.672 61.6111L62.7781 -175.093L22.0025 -155.686L259.755 47.5652L339.672 61.6111Z' fill='%23004254'/%3E%3Cpath d='M144.757 27.3343L-36.6777 -127.755L-77.4533 -108.348L64.8327 13.2739L144.757 27.3343Z' fill='%23004254'/%3E%3Cpath d='M47.2807 10.1946L-86.3991 -104.091L-127.175 -84.6833L-32.6434 -3.86582L47.2807 10.1946Z' fill='%23004254'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3Cdefs%3E%3ClinearGradient id='paint0_linear_3_325' x1='1951.02' y1='-184.05' x2='1848.73' y2='952.827' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23176B87'/%3E%3Cstop offset='0.5' stop-color='%23000C15'/%3E%3Cstop offset='1' stop-color='%23001C30'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E");
-            background-size: cover;
-            background-repeat: no-repeat;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding: 206px 56px;
-        }
-
-        .mail-template__date-row {
-            margin-bottom: 272px;
-            width: 76%;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            gap: 20px;
-        }
-
-        .mail-template__date-image {
-            height: 56px;
-            margin-bottom: 10px;
-            width: 14%;
-            object-fit: contain;
-        }
-
-        .mail-template__date-text {
-            color: var(--white_a700) !important;
-            font-weight: 500 !important;
-            align-self: flex-end;
-        }
-
-        .mail-template__footer {
-            gap: 64px;
-            background-color: var(--gray_100);
-            padding: 84px 56px;
-        }
-
-        .flex-col-center-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .flex-col-end-center {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-end;
-        }
-
-        .mail-template__info-row {
-            margin-top: 260px;
-            width: 26%;
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
-
-        .mail-template__info-column {
-            background-color: var(--white_a700);
-            padding: var(--space-xs);
-            border-radius: var(--radius-sm);
-        }
-
-        .mail-template__social-column {
-            background-color: var(--white_a700);
-            width: 18%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-            border-radius: var(--radius-sm);
-        }
-
-        .mail-template__vector-column {
-            background-color: var(--white_a700);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: var(--space-xs);
-            border-radius: var(--radius-sm);
-        }
-
-        .profile {
-            gap: 48px;
-            background-color: var(--white_a700);
-            width: 62%;
-            position: absolute;
-            top: 20%;
-            right: 0;
-            left: 0;
-            margin: auto;
-            padding: 170px 56px;
-            border-radius: var(--radius-xs);
-        }
-
-        .profile__name {
-            font-size: 53.6px !important;
-            color: var(--gray_900);
-        }
-
-        .profile__description {
+        
+        .header-section {
+            background: linear-gradient(135deg, #176b87 0%, #000c15 50%, #001c30 100%);
+            padding: 40px 20px;
             text-align: center;
-            align-self: stretch;
-            line-height: 32px;
-            color: var(--gray_900);
-            font-size: 20px;
+        }
+        
+        .header-content {
+            color: #ffffff;
+        }
+        
+        .logo-section {
+            margin-bottom: 30px;
+        }
+        
+        .date-text {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 20px;
+        }
+        
+        .main-content {
+            background-color: #ffffff;
+            padding: 40px 30px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .profile-card {
+            background-color: #ffffff;
+            border-radius: 20px;
+            padding: 40px 30px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px 0;
+        }
+        
+        .profile-name {
+            font-size: 36px;
+            color: #001c30;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        
+        .profile-description {
+            font-size: 18px;
+            color: #001c30;
+            line-height: 1.6;
             font-weight: 600;
         }
-
-        .mail-template__description-text {
+        
+        .footer-section {
+            background-color: #f5f5f5;
+            padding: 40px 30px;
             text-align: center;
-            line-height: 39px;
-            font-size: 25px;
-            font-weight: 300;
         }
-
-        .mail-template__description-text-span {
-            color: var(--gray_700);
+        
+        .social-icons {
+            margin: 30px 0;
         }
-
-        .mail-template__description-text-span-1 {
-            color: var(--gray_900);
-            font-weight: 700;
+        
+        .social-icon {
+            display: inline-block;
+            margin: 0 15px;
+            padding: 15px;
+            background-color: #ffffff;
+            border-radius: 20px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            vertical-align: middle;
         }
-
-        .mail-template__policy-row {
-            width: 22%;
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
+        
+        .footer-text {
+            font-size: 16px;
+            color: #616161;
+            line-height: 1.6;
+            margin: 20px 0;
         }
-
-        .mail-template__terms-row {
-            width: 50%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
+        
+        .footer-bold {
+            color: #001c30;
+            font-weight: bold;
         }
-
-        .mail-template__terms-line {
-            height: 32px;
-            background-color: var(--gray_700);
+        
+        .footer-links {
+            margin-top: 30px;
+        }
+        
+        .footer-link {
+            color: #616161;
+            text-decoration: underline;
+            margin: 0 15px;
+            font-size: 14px;
+        }
+        
+        .divider {
+            display: inline-block;
             width: 1px;
+            height: 20px;
+            background-color: #616161;
+            margin: 0 15px;
+            vertical-align: middle;
         }
-
-        /* Responsive Styles */
-        @media only screen and (max-width: 1440px) {
-            .rowdescription {
-                padding-top: 32px;
-                padding-bottom: 32px;
+        
+        /* Mobile responsive */
+        @media only screen and (max-width: 480px) {
+            .email-container {
+                width: 100% !important;
             }
-
-            .stack01011900 {
-                height: auto;
+            
+            .header-section {
+                padding: 30px 15px !important;
             }
-
-            .mail-template__content {
-                padding-left: 20px;
-                padding-right: 20px;
+            
+            .main-content {
+                padding: 30px 20px !important;
             }
-
-            .mail-template__header-row {
-                height: auto;
-                padding-top: 32px;
-                padding-bottom: 32px;
+            
+            .profile-card {
+                padding: 30px 20px !important;
             }
-
-            .mail-template__date-row {
-                width: 100%;
+            
+            .profile-name {
+                font-size: 28px !important;
             }
-
-            .profile {
-                padding: 32px;
+            
+            .profile-description {
+                font-size: 16px !important;
             }
-
-            .profile__name {
-                font-size: 45px !important;
+            
+            .footer-section {
+                padding: 30px 20px !important;
             }
-        }
-
-        @media only screen and (max-width: 1050px) {
-            .rowdescription {
-                padding-top: 20px;
-                padding-bottom: 20px;
-            }
-
-            .mail-template__header-row {
-                padding: 20px;
-            }
-
-            .profile {
-                padding: 20px;
-            }
-
-            .profile__name {
-                font-size: 33px !important;
-            }
-        }
-
-        @media only screen and (max-width: 550px) {
-            .rowdescription {
-                padding-top: 16px;
-                padding-bottom: 16px;
-            }
-
-            .mail-template__header-row {
-                padding: 16px;
-            }
-
-            .mail-template__footer {
-                gap: 32px;
-                padding: 16px;
-            }
-
-            .mail-template__info-column {
-                padding: 16px;
-            }
-
-            .mail-template__vector-column {
-                padding: 16px;
-            }
-
-            .profile {
-                padding: 16px;
-            }
-
-            .profile__name {
-                font-size: 27px !important;
+            
+            .social-icon {
+                margin: 0 8px !important;
+                width: 40px !important;
+                height: 40px !important;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="rowdescription">
-        <div class="stack01011900">
-            <div class="mail-template__content">
-                <div class="mail-template__header">
-                    <div class="mail-template__header-row">
-                        <div class="mail-template__date-row">
-                            <svg width="163" height="57" viewBox="0 0 163 57" fill="none"
-                                xmlns="http://www.w3.org/2000/svg" class="mail-template__date-image">
-                                <path
-                                    d="M31.242 17.2627V11.237H12.7735V45.7624H31.242V39.5737H18.9566V28.3367H44.0154V49.8334L36.8558 56.999H7.15961L0 49.8334V7.16556L7.15961 0H36.8558L44.0154 7.16556V17.2627H31.242Z"
-                                    fill="white" />
-                                <path
-                                    d="M83.225 19.9877V51.6779L77.9073 57H55.8512L50.5336 51.6779V19.9877L55.8512 14.6656H77.9073L83.225 19.9877ZM60.0211 48.6537H73.7383V23.0115H60.0211V48.6537Z"
-                                    fill="white" />
-                                <path
-                                    d="M121.391 19.9877V57H111.904V48.412H98.1864V57H88.6993V19.9877L94.017 14.6656H116.073L121.39 19.9877H121.391ZM111.904 40.0055V23.0115H98.1869V40.0055H111.904Z"
-                                    fill="white" />
-                                <path
-                                    d="M162.439 14.6656V23.0115H148.783V56.9995H139.296V23.0115H125.579V14.6656H162.44H162.439Z"
-                                    fill="white" />
-                                <path
-                                    d="M59.5785 0.0683629V9.69052H57.4218V7.0238L53.8645 3.79326V9.69052H51.7079V0.0683629H53.8645V0.906739L57.4218 4.12339V0.0683629H59.5785Z"
-                                    fill="white" />
-                                <path
-                                    d="M87.8867 1.96547V3.93151H90.5651V5.82848H87.8867V7.79452H92.2956V9.69149H85.7305V0.0693395H92.2956V1.96632H87.8867V1.96547Z"
-                                    fill="white" />
-                                <path
-                                    d="M125.676 3.34017L123.629 4.87965L125.676 6.41913V9.69052H123.519V7.36741L121.912 6.17153L120.306 7.36741V9.69052H118.149V6.41913L120.223 4.89313L118.149 3.33975V0.0683629H120.306V2.39148L121.954 3.62861L123.52 2.47401V0.0683629H125.676V3.33975L125.676 3.34017Z"
-                                    fill="white" />
-                                <path
-                                    d="M159.78 0.0683629V1.96534H156.675V9.69094H154.519V1.96534H151.401V0.0683629H159.78Z"
-                                    fill="white" />
-                            </svg>
-                            <p class="mail-template__date-text">01.01.1900</p>
-                        </div>
-                    </div>
+    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+        <tr>
+            <td>
+                <div class="email-container">
+                    <!-- Header Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="header-section">
+                                <div class="header-content">
+                                    <div class="logo-section">
+                                        <svg width="163" height="57" viewBox="0 0 163 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M31.242 17.2627V11.237H12.7735V45.7624H31.242V39.5737H18.9566V28.3367H44.0154V49.8334L36.8558 56.999H7.15961L0 49.8334V7.16556L7.15961 0H36.8558L44.0154 7.16556V17.2627H31.242Z" fill="white"/>
+                                            <path d="M83.225 19.9877V51.6779L77.9073 57H55.8512L50.5336 51.6779V19.9877L55.8512 14.6656H77.9073L83.225 19.9877ZM60.0211 48.6537H73.7383V23.0115H60.0211V48.6537Z" fill="white"/>
+                                            <path d="M121.391 19.9877V57H111.904V48.412H98.1864V57H88.6993V19.9877L94.017 14.6656H116.073L121.39 19.9877H121.391ZM111.904 40.0055V23.0115H98.1869V40.0055H111.904Z" fill="white"/>
+                                            <path d="M162.439 14.6656V23.0115H148.783V56.9995H139.296V23.0115H125.579V14.6656H162.44H162.439Z" fill="white"/>
+                                            <path d="M59.5785 0.0683629V9.69052H57.4218V7.0238L53.8645 3.79326V9.69052H51.7079V0.0683629H53.8645V0.906739L57.4218 4.12339V0.0683629H59.5785Z" fill="white"/>
+                                            <path d="M87.8867 1.96547V3.93151H90.5651V5.82848H87.8867V7.79452H92.2956V9.69149H85.7305V0.0693395H92.2956V1.96632H87.8867V1.96547Z" fill="white"/>
+                                            <path d="M125.676 3.34017L123.629 4.87965L125.676 6.41913V9.69052H123.519V7.36741L121.912 6.17153L120.306 7.36741V9.69052H118.149V6.41913L120.223 4.89313L118.149 3.33975V0.0683629H120.306V2.39148L121.954 3.62861L123.52 2.47401V0.0683629H125.676V3.33975L125.676 3.34017Z" fill="white"/>
+                                            <path d="M159.78 0.0683629V1.96534H156.675V9.69094H154.519V1.96534H151.401V0.0683629H159.78Z" fill="white"/>
+                                        </svg>
+                                    </div>
+                                    <div class="date-text">01.01.1900</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <!-- Main Content Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="main-content">
+                                <div class="profile-card">
+                                    <h1 class="profile-name">Burak İleri,</h1>
+                                    <p class="profile-description">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut felis ante. Phasellus fringilla dapibus maximus. Etiam justo mi, bibendum condimentum lectus in, facilisis vehicula ex. Etiam vehicula felis vel risus tincidunt, vel mattis metus pharetra. Nulla nec orci congue, bibendum tortor porta, rhoncus libero. Praesent venenatis aliquam sem ac efficitur. Duis in malesuada arcu. Proin felis lorem, rhoncus quis eros ut, vehicula vehicula mauris. Integer vel nunc in odio placerat faucibus eget vitae ligula. Proin eleifend egestas malesuada. Duis elementum magna fermentum faucibus iaculis. Mauris sed efficitur nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Integer quis erat ac lectus imperdiet suscipit. Nullam sed enim a leo bibendum eleifend a at arcu.
+                                    </p>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                    <!-- Footer Section -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                            <td class="footer-section">
+                                <div class="social-icons">
+                                    <div class="social-icon">
+                                        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M16.9987 8.15628C12.2003 8.15628 8.22452 12.0635 8.22452 16.9305C8.22452 21.7974 12.1318 25.7047 16.9987 25.7047C21.8656 25.7047 25.7729 21.7289 25.7729 16.9305C25.7729 12.1321 21.7971 8.15628 16.9987 8.15628ZM16.9987 22.5514C13.914 22.5514 11.3777 20.0152 11.3777 16.9305C11.3777 13.8458 13.914 11.3095 16.9987 11.3095C20.0834 11.3095 22.6197 13.8458 22.6197 16.9305C22.6197 20.0152 20.0834 22.5514 16.9987 22.5514Z" fill="#A8A8A8"/>
+                                            <path d="M26.1165 9.939C27.2144 9.939 28.1045 9.04898 28.1045 7.9511C28.1045 6.85321 27.2144 5.96319 26.1165 5.96319C25.0187 5.96319 24.1286 6.85321 24.1286 7.9511C24.1286 9.04898 25.0187 9.939 26.1165 9.939Z" fill="#A8A8A8"/>
+                                            <path d="M31.2581 2.81048C29.4758 0.959677 26.9395 0 24.0605 0H9.93952C3.97581 0 0 3.97581 0 9.93952V23.9919C0 26.9395 0.959677 29.4758 2.87903 31.3266C4.72984 33.1089 7.19758 34 10.0081 34H23.9919C26.9395 34 29.4073 33.0403 31.1895 31.3266C33.0403 29.5444 34 27.0081 34 24.0605V9.93952C34 7.06048 33.0403 4.59274 31.2581 2.81048ZM30.9839 24.0605C30.9839 26.1855 30.2298 27.8992 28.996 29.0645C27.7621 30.2298 26.0484 30.8468 23.9919 30.8468H10.0081C7.95161 30.8468 6.2379 30.2298 5.00403 29.0645C3.77016 27.8306 3.15323 26.1169 3.15323 23.9919V9.93952C3.15323 7.88306 3.77016 6.16935 5.00403 4.93548C6.16935 3.77016 7.95161 3.15323 10.0081 3.15323H24.129C26.1855 3.15323 27.8992 3.77016 29.1331 5.00403C30.2984 6.2379 30.9839 7.95161 30.9839 9.93952V24.0605Z" fill="#A8A8A8"/>
+                                        </svg>
+                                    </div>
+                                    
+                                    <div class="social-icon">
+                                        <svg width="19" height="39" viewBox="0 0 19 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.6667 13V9.13047C12.6667 7.38359 13.0427 6.5 15.6849 6.5H19V0H13.4682C6.68958 0 4.45312 3.18906 4.45312 8.66328V13H0V19.5H4.45312V39H12.6667V19.5H18.2479L19 13H12.6667Z" fill="#A8A8A8"/>
+                                        </svg>
+                                    </div>
+                                    
+                                    <div class="social-icon">
+                                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M19.6392 13.9731L31.9242 0H29.0131L18.3462 12.1329L9.82649 0H0L12.8834 18.3469L0 33H2.9114L14.1761 20.1874L23.1735 33H33L19.639 13.9731H19.6398H19.6392ZM15.6518 18.5086L14.3464 16.6818L3.96024 2.14435H8.4317L16.8136 13.8763L18.119 15.7031L29.0145 30.9528H24.543L15.652 18.5089V18.5081L15.6518 18.5086Z" fill="#A8A8A8"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                
+                                <p class="footer-text">
+                                    If you have any questions, feel free message us at <span class="footer-bold">support@nextgoat.com.</span><br>
+                                    <span class="footer-bold">All right reserved. Update email preferences or unsubscribe.</span>
+                                </p>
+                                
+                                <div class="footer-links">
+                                    <a href="#" class="footer-link">Terms Of Use</a>
+                                    <span class="divider"></span>
+                                    <a href="#" class="footer-link">Privacy Policy</a>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
                 </div>
-
-                <div class="flex-col-end-center mail-template__footer">
-                    <div class="mail-template__info-row">
-                        <div class="flex-col-center-center mail-template__info-column">
-                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M16.9987 8.15628C12.2003 8.15628 8.22452 12.0635 8.22452 16.9305C8.22452 21.7974 12.1318 25.7047 16.9987 25.7047C21.8656 25.7047 25.7729 21.7289 25.7729 16.9305C25.7729 12.1321 21.7971 8.15628 16.9987 8.15628ZM16.9987 22.5514C13.914 22.5514 11.3777 20.0152 11.3777 16.9305C11.3777 13.8458 13.914 11.3095 16.9987 11.3095C20.0834 11.3095 22.6197 13.8458 22.6197 16.9305C22.6197 20.0152 20.0834 22.5514 16.9987 22.5514Z"
-                                    fill="#A8A8A8" />
-                                <path
-                                    d="M26.1165 9.939C27.2144 9.939 28.1045 9.04898 28.1045 7.9511C28.1045 6.85321 27.2144 5.96319 26.1165 5.96319C25.0187 5.96319 24.1286 6.85321 24.1286 7.9511C24.1286 9.04898 25.0187 9.939 26.1165 9.939Z"
-                                    fill="#A8A8A8" />
-                                <path
-                                    d="M31.2581 2.81048C29.4758 0.959677 26.9395 0 24.0605 0H9.93952C3.97581 0 0 3.97581 0 9.93952V23.9919C0 26.9395 0.959677 29.4758 2.87903 31.3266C4.72984 33.1089 7.19758 34 10.0081 34H23.9919C26.9395 34 29.4073 33.0403 31.1895 31.3266C33.0403 29.5444 34 27.0081 34 24.0605V9.93952C34 7.06048 33.0403 4.59274 31.2581 2.81048ZM30.9839 24.0605C30.9839 26.1855 30.2298 27.8992 28.996 29.0645C27.7621 30.2298 26.0484 30.8468 23.9919 30.8468H10.0081C7.95161 30.8468 6.2379 30.2298 5.00403 29.0645C3.77016 27.8306 3.15323 26.1169 3.15323 23.9919V9.93952C3.15323 7.88306 3.77016 6.16935 5.00403 4.93548C6.16935 3.77016 7.95161 3.15323 10.0081 3.15323H24.129C26.1855 3.15323 27.8992 3.77016 29.1331 5.00403C30.2984 6.2379 30.9839 7.95161 30.9839 9.93952V24.0605Z"
-                                    fill="#A8A8A8" />
-                            </svg>
-                        </div>
-                        <div class="mail-template__social-column">
-                            <svg width="19" height="39" viewBox="0 0 19 39" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M12.6667 13V9.13047C12.6667 7.38359 13.0427 6.5 15.6849 6.5H19V0H13.4682C6.68958 0 4.45312 3.18906 4.45312 8.66328V13H0V19.5H4.45312V39H12.6667V19.5H18.2479L19 13H12.6667Z"
-                                    fill="#A8A8A8" />
-                            </svg>
-                        </div>
-                        <div class="mail-template__vector-column">
-                            <svg width="33" height="33" viewBox="0 0 33 33" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M19.6392 13.9731L31.9242 0H29.0131L18.3462 12.1329L9.82649 0H0L12.8834 18.3469L0 33H2.9114L14.1761 20.1874L23.1735 33H33L19.639 13.9731H19.6398H19.6392ZM15.6518 18.5086L14.3464 16.6818L3.96024 2.14435H8.4317L16.8136 13.8763L18.119 15.7031L29.0145 30.9528H24.543L15.652 18.5089V18.5081L15.6518 18.5086Z"
-                                    fill="#A8A8A8" />
-                            </svg>
-                        </div>
-                    </div>
-                    <p class="mail-template__description-text">
-                        <span class="mail-template__description-text-span">If you have any questions, feel free message
-                            us at</span>
-                        <span class="mail-template__description-text-span-1">support@nextgoat.com.<br />All right
-                            reserved. Update email preferences or unsubscribe.</span>
-                    </p>
-                    <div class="mail-template__policy-row">
-                        <div class="mail-template__terms-row">
-                            <a href="#">
-                                <p class="mail-template__privacy-text">Terms Of use</p>
-                            </a>
-                            <div class="mail-template__terms-line"></div>
-                        </div>
-                        <a href="#">
-                            <p class="mail-template__privacy-text">Privacy Policy</p>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="flex-col-center-center profile">
-                <h1 class="profile__name">Burak İleri,</h1>
-                <h2 class="profile__description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut felis ante. Phasellus fringilla
-                    dapibus maximus. Etiam justo mi, bibendum condimentum lectus in, facilisis vehicula ex. Etiam
-                    vehicula felis vel risus tincidunt, vel mattis metus pharetra. Nulla nec orci congue, bibendum
-                    tortor porta, rhoncus libero. Praesent venenatis aliquam sem ac efficitur. Duis in malesuada arcu.
-                    Proin felis lorem, rhoncus quis eros ut, vehicula vehicula mauris. Integer vel nunc in odio placerat
-                    faucibus eget vitae ligula. Proin eleifend egestas malesuada. Duis elementum magna fermentum
-                    faucibus iaculis. Mauris sed efficitur nulla. Interdum et malesuada fames ac ante ipsum primis in
-                    faucibus. Integer quis erat ac lectus imperdiet suscipit. Nullam sed enim a leo bibendum eleifend a
-                    at arcu.
-                </h2>
-            </div>
-        </div>
-    </div>
+            </td>
+        </tr>
+    </table>
 </body>
-
 </html>
